@@ -1,5 +1,3 @@
-* [Home](/)
-
 * **M1**
   * [L0 — Hello, Grader](L00-hello-grader.md)
 * **M2**

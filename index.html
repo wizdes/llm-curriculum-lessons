@@ -18,7 +18,8 @@
       href="//cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
     />
     <style>
-      /* Match the main curriculum site: GitHub-flat, system fonts, blue accent. */
+      /* Port of the in-repo site (site/index.html): GitHub-flat, system fonts,
+         240px sidebar, 880px left-aligned content. */
       :root {
         --theme-color: #0969da;
         --border: #d8dee4;
@@ -29,39 +30,98 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         color: #1f2328;
       }
+
+      /* Sidebar: narrow 300px -> 240px and shift the content to match. */
       .sidebar {
+        width: 240px;
+        padding: 16px;
         border-right: 1px solid var(--border);
+      }
+      .content {
+        left: 240px;
+      }
+      .sidebar > h1 {
+        display: none; /* hide the app title so the list starts at M1 */
       }
       .sidebar-nav strong {
         color: #57606a;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 600;
         letter-spacing: 0.02em;
       }
-      .sidebar a {
-        color: #0969da;
+      .sidebar-nav ul li ul {
+        padding-left: 0; /* no extra indent for lessons under a milestone */
       }
+      .sidebar-nav a {
+        display: block;
+        padding: 6px 8px;
+        border-radius: 6px;
+        color: #0969da;
+        text-decoration: none;
+      }
+      .sidebar-nav li.active > a,
+      .sidebar-nav a.active {
+        background: #ddf4ff;
+        font-weight: 600;
+      }
+      .sidebar-toggle {
+        display: none; /* desktop: plain sidebar, no hamburger (shown on mobile) */
+      }
+
+      /* Content: left-aligned, original width + padding + typographic scale. */
       .markdown-section {
-        max-width: 56rem;
+        max-width: 880px;
+        margin: 0;
+        padding: 24px 32px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .markdown-section h1 {
+        font-size: 2em;
+      }
+      .markdown-section h2 {
+        font-size: 1.5em;
+      }
+      .markdown-section h1,
+      .markdown-section h2,
+      .markdown-section h3 {
+        font-weight: 700;
+        color: #1f2328;
       }
       .markdown-section a {
         color: #0969da;
       }
-      .markdown-section pre,
-      .markdown-section code {
+      .markdown-section pre {
         background: #f6f8fa;
-      }
-      /* Flatten the search box to a plain bordered input. */
-      .search {
-        border-bottom: 1px solid var(--border);
-      }
-      .search .input-wrap input {
-        border: 1px solid var(--border);
+        padding: 12px;
         border-radius: 6px;
-        box-shadow: none;
       }
-      .search p.empty {
-        color: #57606a;
+      .markdown-section code {
+        background: transparent; /* inline code is not boxed */
+        padding: 0;
+      }
+      .markdown-section pre > code {
+        background: transparent;
+      }
+
+      /* Mobile (<=768px): keep pure.css's off-canvas hamburger, match 240px. */
+      @media screen and (max-width: 768px) {
+        .sidebar-toggle {
+          display: block; /* the hamburger that hides the lesson list */
+        }
+        /* pure.css hides the sidebar with `left`, not transform; match the
+           240px width so it sits flush against the content when revealed. */
+        .sidebar {
+          left: -240px;
+          width: 240px;
+        }
+        body.close .sidebar {
+          transform: translateX(240px); /* slide in to left:0 */
+        }
+        body.close .content {
+          transform: translateX(240px);
+        }
       }
     </style>
   </head>
@@ -71,19 +131,12 @@
       window.$docsify = {
         name: "LLM Curriculum",
         loadSidebar: true,
-        subMaxLevel: 2,
         auto2top: true,
         relativePath: false,
-        search: {
-          placeholder: "Search the lessons…",
-          noData: "No matches.",
-          depth: 3,
-        },
       };
     </script>
-    <!-- Docsify core + search (mobile sidebar toggle ships with the theme) -->
+    <!-- Docsify core (mobile sidebar toggle ships with the theme) -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
     <!-- KaTeX math ($…$ inline, $$…$$ display) -->
     <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
     <script src="//cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
