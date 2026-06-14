@@ -224,7 +224,7 @@ You will build both. The perceptron's failure is what makes them necessary.
 
 ## Exercise
 
-Implement in `my_work/perceptron/perceptron.py` (run `grade start perceptron` to
+Implement in `my_work/perceptron/perceptron.py` (run `uv run grade start L03-perceptron` to
 get the scaffold):
 
 - `standardize(X)` — the **warm-up**, recalled cold from L2. Parameter: `X` is the
@@ -255,7 +255,7 @@ get the scaffold):
   $\{-1, +1\}$ set — a score of exactly 0 maps to $+1$ so every output is a valid
   signed label.
 
-Then grade it: the site's Run Grader button or `grade perceptron`.
+Then grade it: the site's Run Grader button or `uv run grade L03-perceptron`.
 
 ## How the grader checks you
 
@@ -300,7 +300,7 @@ named trap above is steered around by design.
 
 ## Done when
 
-`grade perceptron` shows all-green: the warm-up `standardize` leaves each column
+`uv run grade L03-perceptron` shows all-green: the warm-up `standardize` leaves each column
 mean ~0 / std ~1, `perceptron_step` matches the 6-point trace exactly (both the
 update and the leave-alone branch), `predict` returns only $\{-1, +1\}$ labels,
 and `train_perceptron` clears 0.85 on 0-vs-1 and 0.75 on 3-vs-5 at 5 epochs,

@@ -340,7 +340,7 @@ if it spikes, that is where warmup and gradient clipping earn their keep.
 
 ## Exercise
 
-Implement in `my_work/train-gpt/train_gpt.py` (run `grade start train-gpt` to get
+Implement in `my_work/train-gpt/train_gpt.py` (run `uv run grade start L23-train-gpt` to get
 the scaffold). Two frozen canonicals are imported for you —
 `from references.gpt import GPT, GPTConfig` and the frozen `train_loop` — and the
 `SMOKE` / `BABY_GPT` configs are given. You write:
@@ -385,7 +385,7 @@ the scaffold). Two frozen canonicals are imported for you —
   optimizer via `make_adamw`, build `get_batch` via `make_get_batch`, and return
   `train_loop(...)` with all the run controls passed straight through.
 
-Then grade it: the site's Run Grader button or `grade train-gpt`.
+Then grade it: the site's Run Grader button or `uv run grade L23-train-gpt`.
 
 ## How the grader checks you
 
@@ -433,7 +433,7 @@ go in the no-decay group" to the actual loop.
 
 ## Done when
 
-`grade train-gpt` shows all-green: the warm-up `SelfAttentionHead` matches
+`uv run grade L23-train-gpt` shows all-green: the warm-up `SelfAttentionHead` matches
 hand-computed causal attention to `1e-5`; `train(SMOKE, 100)` logs 100 losses and
 drives the loss down by at least `0.1`; the checkpoint-then-`resume_from` run
 reproduces the uninterrupted step-100 loss to `1e-6`; the saved checkpoint carries

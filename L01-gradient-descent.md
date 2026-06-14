@@ -377,7 +377,7 @@ smoothness is a property of these toy problems, not of the world.
 ## Exercise
 
 Implement in `my_work/gradient-descent/gradient_descent.py` (run
-`grade start gradient-descent` to get the scaffold):
+`uv run grade start L01-gradient-descent` to get the scaffold):
 
 - `mse(y, y_hat)` — the **warm-up**, recalled from L0. Parameters: `y` is the
   array of true answers, `y_hat` the array of model predictions (same length); it
@@ -399,7 +399,7 @@ Implement in `my_work/gradient-descent/gradient_descent.py` (run
   $x \leftarrow x - \eta\, \nabla f(x)$ `steps` times and return the final
   parameter vector, shape `(d,)`. Do not mutate the caller's `x0` (copy it first).
 
-Then grade it: the site's Run Grader button or `grade gradient-descent`.
+Then grade it: the site's Run Grader button or `uv run grade L01-gradient-descent`.
 
 ## How the grader checks you
 
@@ -437,7 +437,7 @@ hints point you back to `by_hand_check.py`.
 
 ## Done when
 
-`grade gradient-descent` shows all-green: the warm-up passes, `numerical_gradient`
+`uv run grade L01-gradient-descent` shows all-green: the warm-up passes, `numerical_gradient`
 matches analytic gradients to $10^{-7}$ and passes the kink check (~0 at the
 corner) without failing, and `gradient_descent` gets within $0.01$ of the origin
 on the bowl and decreases the loss on the ill-conditioned quadratic. Then run the

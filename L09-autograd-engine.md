@@ -202,7 +202,7 @@ the graph*, not about two big phases of code you write by hand.
 ## Exercise
 
 Implement your engine in `my_work/autograd-engine/autograd_engine.py`. Run
-`grade start autograd-engine` to drop the starter scaffold into place. Do the
+`uv run grade start L09-autograd-engine` to drop the starter scaffold into place. Do the
 spaced-retrieval warm-up first, then build `Value` one operation at a time,
 deriving each gate's local derivative *before* you transcribe it. Keep the engine
 self-contained: Python's `math` module only — no numpy, no torch. Climb the hint
@@ -250,7 +250,7 @@ You implement two things: a warm-up function and the `Value` class.
   `__neg__`, `__sub__`, `__truediv__`) are already written for you in the starter —
   they delegate to the ops above so you can mix `Value`s with plain numbers.
 
-Then grade it: the site's Run Grader button or `grade autograd-engine`.
+Then grade it: the site's Run Grader button or `uv run grade L09-autograd-engine`.
 
 ## How the grader checks you
 
@@ -297,7 +297,7 @@ There are ladders for `fan_out_accumulation`, `topo_sort_order`, and the
 
 ## Done when
 
-`grade autograd-engine` shows all-green: the warm-up `forward_pass` reproduces
+`uv run grade L09-autograd-engine` shows all-green: the warm-up `forward_pass` reproduces
 the L7 forward nodes, your engine's gradients match the L7 hand-derived reference
 to `1e-7` on all nine parameters, the fan-out check returns `a.grad == 2.0`, the
 diamond returns `a.grad == 15.0`, every per-op gradient matches torch to `1e-6`,

@@ -290,7 +290,7 @@ answer key.
 ## Exercise
 
 Implement in `my_work/logistic-regression/logistic_regression.py` (run
-`grade start logistic-regression` to get the scaffold). This is a blind rebuild:
+`uv run grade start L04-logistic-regression` to get the scaffold). This is a blind rebuild:
 you write each function from scratch, then the grader checks it. The shape
 convention, curriculum-wide: $n$ rows (examples) and $d$ features, so $X$ is
 $(n, d)$ while $z$ and $y$ are both length $n$. Keep every array in `float64`
@@ -329,7 +329,7 @@ $(n, d)$ while $z$ and $y$ are both length $n$. Keep every array in `float64`
   zero and run the numbered training loop above. Returns the fitted weight
   vector, shape `(d,)`.
 
-Then grade it: the site's Run Grader button or `grade logistic-regression`.
+Then grade it: the site's Run Grader button or `uv run grade L04-logistic-regression`.
 
 ## How the grader checks you
 
@@ -387,7 +387,7 @@ numbers desync from the worked module, the hints point you back to it.
 
 ## Done when
 
-`grade logistic-regression` shows all-green: the warm-up trace matches, `sigmoid`
+`uv run grade L04-logistic-regression` shows all-green: the warm-up trace matches, `sigmoid`
 is exactly $1.0$/$0.0$/$0.5$ at $1000$/$-1000$/$0$ with no `NaN`,
 `bce_from_logits` is finite and $1000.0$ at the saturated probe, `bce_grad`
 matches the numerical gradient to $10^{-4}$, and `fit` decreases the loss every

@@ -309,7 +309,7 @@ the grader uses: `GPTConfig(n_layer=2, n_head=2, n_embd=16, block_size=32, vocab
 ## Exercise
 
 Implement the GPT in `my_work/gpt-assembly/gpt_assembly.py` (run
-`grade start gpt-assembly` to get the scaffold). You will build the warm-up bigram
+`uv run grade start L22-gpt-assembly` to get the scaffold). You will build the warm-up bigram
 model, the config, and the four GPT pieces. Several pieces — `GPTConfig`,
 `MultiHeadAttention`, `FeedForward` — are scaffolded for you; the lines that matter are
 in `TransformerBlock.forward` and `GPT`. Each piece below lists its signature, every
@@ -348,7 +348,7 @@ parameter, and what it returns.
   dropout, run the block stack, apply `ln_f`, then `lm_head`; return **logits only**,
   shape `(B, T, vocab_size)`. No loss.
 
-Then grade it: the site's Run Grader button or `grade gpt-assembly`.
+Then grade it: the site's Run Grader button or `uv run grade L22-gpt-assembly`.
 
 ## How the grader checks you
 
@@ -409,7 +409,7 @@ only if the placement probe keeps firing.
 
 ## Done when
 
-`grade gpt-assembly` shows all-green: the bigram warm-up generates a `(1, 6)` sequence
+`uv run grade L22-gpt-assembly` shows all-green: the bigram warm-up generates a `(1, 6)` sequence
 of valid ids, the parameter count is exactly **9184**, `forward` returns `(B, T, vocab_size)`
 logits through the 2-block stack, the pre-norm probe passes (attention sees a per-feature
 normalized input — your block is `x = x + attn(ln1(x))`, not `x = ln1(x + attn(x))`),

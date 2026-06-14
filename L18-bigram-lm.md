@@ -244,7 +244,7 @@ the next lessons add context.
 
 ## Exercise
 
-Implement in `my_work/bigram-lm/bigram_lm.py` (run `grade start bigram-lm` to get
+Implement in `my_work/bigram-lm/bigram_lm.py` (run `uv run grade start L18-bigram-lm` to get
 the scaffold). Each function below lists its signature, every parameter, and what
 it returns.
 
@@ -273,7 +273,7 @@ it returns.
   how many tokens to produce; `seed` seeds a private `torch.Generator`. Returns a
   1-D `LongTensor` of length `max_new_tokens`, every id in `[0, vocab_size)`.
 
-Then grade it: the site's Run Grader button or `grade bigram-lm`.
+Then grade it: the site's Run Grader button or `uv run grade L18-bigram-lm`.
 
 ## How the grader checks you
 
@@ -330,7 +330,7 @@ Try level 1 before climbing.
 
 ## Done when
 
-`grade bigram-lm` shows all-green: the BCE warm-up stays finite at `±1000`;
+`uv run grade L18-bigram-lm` shows all-green: the BCE warm-up stays finite at `±1000`;
 `make_bigram_batches` produces the next-token shift (`X = tokens[:-1]`,
 `Y = tokens[1:]`); a trained `BigramLM` reaches the counting-bigram NLL floor on
 the training split; `generate` returns a deterministic length-`max_new_tokens`

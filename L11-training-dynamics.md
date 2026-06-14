@@ -251,7 +251,7 @@ prints the loss falling — fully self-contained numpy, no dataset.
 ## Exercise
 
 Implement in `my_work/training-dynamics/training_dynamics.py` (run
-`grade start training-dynamics` to get the scaffold). Do the warm-up
+`uv run grade start L11-training-dynamics` to get the scaffold). Do the warm-up
 `numerical_gradient` first — every gradient check below leans on it. All five
 functions are plain numpy; no dataset, no imports beyond numpy.
 
@@ -290,7 +290,7 @@ functions are plain numpy; no dataset, no imports beyond numpy.
   the bias correction**. Returns the tuple `(new_params, new_state)` where
   `new_state` is the updated `{"m", "v", "t"}` dict.
 
-Then grade it: the site's Run Grader button or `grade training-dynamics`.
+Then grade it: the site's Run Grader button or `uv run grade L11-training-dynamics`.
 
 ## How the grader checks you
 
@@ -342,7 +342,7 @@ zero-start bias in `m` and `v` that the correction undoes.
 
 ## Done when
 
-`grade training-dynamics` shows all-green: the warm-up `numerical_gradient`
+`uv run grade L11-training-dynamics` shows all-green: the warm-up `numerical_gradient`
 matches the analytic gradient to `1e-5`; `sgd_momentum` and `adam` match their
 3-step reference traces to `1e-10` (with `adam` applying bias correction);
 `l2_regularized_loss` has the correct `2 * lam * w` penalty gradient; `init_xavier`

@@ -307,7 +307,7 @@ causal-mask thought experiment — predict first, then check.
 ## Exercise
 
 Implement in `my_work/ablation-harness/ablation_harness.py` (run
-`grade start ablation-harness` to get the scaffold). For imports, lean on
+`uv run grade start L27-ablation-harness` to get the scaffold). For imports, lean on
 `references.*` (plus numpy/torch and ordinary stdlib like `json`, `time`,
 `dataclasses`, `pathlib`, and `yaml` for the YAML parse) — the one hard rule is
 **no cross-lesson imports**, so nothing reaches into another lesson's `my_work`.
@@ -348,7 +348,7 @@ in this module as well.
   fresh `get_batch`), `steps`, `wall_clock_s`, and `config_diff` (the diff vs the
   unmodified base).
 
-Then grade it: the site's Run Grader button or `grade ablation-harness`.
+Then grade it: the site's Run Grader button or `uv run grade L27-ablation-harness`.
 
 ## How the grader checks you
 
@@ -400,7 +400,7 @@ reproducibility trap, not flaky hardware: go back and check where you seeded.
 
 ## Done when
 
-`grade ablation-harness` shows all-green: `config_diff` reports only changed keys
+`uv run grade L27-ablation-harness` shows all-green: `config_diff` reports only changed keys
 (flat and nested) and `{}` for identical configs; `run_variant` is bitwise
 reproducible across two `seed=42` runs, takes the budget-derived 50 steps, and
 returns the full eight-key schema; and `write_results`/`read_results` round-trip

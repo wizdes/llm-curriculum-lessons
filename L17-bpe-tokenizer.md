@@ -262,7 +262,7 @@ can iterate fast.
 ## Exercise
 
 Implement the warm-up and the three BPE functions in
-`my_work/bpe-tokenizer/bpe_tokenizer.py` (run `grade start bpe-tokenizer` to
+`my_work/bpe-tokenizer/bpe_tokenizer.py` (run `uv run grade start L17-bpe-tokenizer` to
 create that file from the starter). Self-contained: numpy only — no torch, no
 cross-lesson imports, no dataset reads.
 
@@ -292,7 +292,7 @@ cross-lesson imports, no dataset reads.
   the byte vocab from `merges` in rank order, map each id to its bytes, join, and
   `.decode("utf-8")`.
 
-Then grade it: the site's Run Grader button or `grade bpe-tokenizer`.
+Then grade it: the site's Run Grader button or `uv run grade L17-bpe-tokenizer`.
 
 ## How the grader checks you
 
@@ -352,7 +352,7 @@ rule the code must satisfy), then pseudocode. Try level 1 before climbing.
 
 ## Done when
 
-`grade bpe-tokenizer` shows all-green: the `sigmoid` warm-up matches the stable
+`uv run grade L17-bpe-tokenizer` shows all-green: the `sigmoid` warm-up matches the stable
 reference at the ±1000 extremes; every round-trip case (ASCII, multibyte, emoji)
 reproduces its input exactly; both multibyte and repetitive corpora compress
 below 70% of their byte length; `encode` matches the rank-order reference; and

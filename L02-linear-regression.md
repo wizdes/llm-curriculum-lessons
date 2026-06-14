@@ -335,7 +335,7 @@ scales — which is exactly why standardization earns its keep.
 ## Exercise
 
 Implement six functions in `my_work/linear-regression/linear_regression.py`. Run
-`grade start linear-regression` to get the scaffold, then fill in each function
+`uv run grade start L02-linear-regression` to get the scaffold, then fill in each function
 (do not peek at the worked solution while you do). Keep every array **float64** —
 the gradient check fails on float32 rounding noise. Do not import sklearn; it
 lives only inside the grader's oracle.
@@ -377,7 +377,7 @@ lives only inside the grader's oracle.
   call the warm-up — so the module stays self-contained. Returns the fitted
   weight vector, shape `(d,)`.
 
-Then grade it: the site's "Run Grader" button or `grade linear-regression`.
+Then grade it: the site's "Run Grader" button or `uv run grade L02-linear-regression`.
 
 ## How the grader checks you
 
@@ -432,7 +432,7 @@ scaling and the `2/n` factor matter, which is often all you need.
 
 ## Done when
 
-`grade linear-regression` shows all-green: the warm-up reaches the origin on the
+`uv run grade L02-linear-regression` shows all-green: the warm-up reaches the origin on the
 bowl; `standardize` returns mean-0/std-1 columns; `predict` returns `[2, 5]` on
 the fixed case; `mse_loss` returns `1.5`; `mse_grad` matches the numerical
 gradient to $10^{-4}$ in float64; and `fit` agrees with the sklearn oracle to

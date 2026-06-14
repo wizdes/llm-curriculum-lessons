@@ -222,7 +222,7 @@ that points at the fix.
 ## Exercise
 
 Implement in `my_work/attention-viz/attention_viz.py` (run
-`grade start attention-viz` to get the scaffold). You write two functions and may
+`uv run grade start L28-attention-viz` to get the scaffold). You write two functions and may
 import only `references.*` plus numpy/torch — no cross-lesson imports.
 
 - `row_sum_check(attn)` — the **warm-up**, recalled cold from the softmax idea.
@@ -246,7 +246,7 @@ import only `references.*` plus numpy/torch — no cross-lesson imports.
   head's strict upper triangle holds a cell above `1e-6` (the message must contain
   the words "upper triangle").
 
-Then grade it: the site's Run Grader button or `grade attention-viz`.
+Then grade it: the site's Run Grader button or `uv run grade L28-attention-viz`.
 
 ## How the grader checks you
 
@@ -289,7 +289,7 @@ per-block loop, and `row_sum_check` from "rows are distributions" to the one-lin
 
 ## Done when
 
-`grade attention-viz` shows all-green: `row_sum_check` passes all five synthetic
+`uv run grade L28-attention-viz` shows all-green: `row_sum_check` passes all five synthetic
 cases (accepting the within-`1e-5` matrices, rejecting the off-by-`1e-4`,
 all-zeros, and over-1 rows), and `attention_maps` returns 2 layers of shape
 `(2, 5, 5)` with row sums of 1 and a hard-zero upper triangle, registers no

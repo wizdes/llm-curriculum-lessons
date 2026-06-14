@@ -247,7 +247,7 @@ is **multi-head attention** — the next lesson.
 ## Exercise
 
 Implement in `my_work/single-head-attention/single_head_attention.py` (run
-`grade start single-head-attention` to get the scaffold). Three pieces:
+`uv run grade start L20-single-head-attention` to get the scaffold). Three pieces:
 
 - `adam_bias_correction(m, v, beta1, beta2, t)` — the **warm-up**, recalled cold
   from L10. Parameters: `m` and `v` are the first- and second-moment estimates
@@ -281,7 +281,7 @@ Implement in `my_work/single-head-attention/single_head_attention.py` (run
   masked scaled dot-product attention dividing by `sqrt(head_size)`, and return
   shape `(B, T, head_size)`.
 
-Then grade it: the site's Run Grader button or `grade single-head-attention`.
+Then grade it: the site's Run Grader button or `uv run grade L20-single-head-attention`.
 
 ## How the grader checks you
 
@@ -339,7 +339,7 @@ find the *first* panel that diverges, instead of re-deriving the whole sheet.
 
 ## Done when
 
-`grade single-head-attention` shows all-green: the warm-up `adam_bias_correction`
+`uv run grade L20-single-head-attention` shows all-green: the warm-up `adam_bias_correction`
 matches the bias-corrected moments, `attention` reproduces the derivation panel's
 `Z` to `1e-5`, the shape contract holds for both `attention` and
 `SelfAttentionHead`, output row 0 is causal (unaffected by later tokens), and all

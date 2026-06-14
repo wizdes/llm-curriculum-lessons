@@ -197,7 +197,7 @@ as a warm-up below.
 ## Exercise
 
 Implement in `my_work/backprop-paper/backprop_paper.py` (run
-`grade start backprop-paper` to get the scaffold). All values are scalars and all
+`uv run grade start L08-backprop-paper` to get the scaffold). All values are scalars and all
 arithmetic is `float64`.
 
 - **Spaced-retrieval warm-up, do this first, from memory (2–5 min):**
@@ -224,7 +224,7 @@ arithmetic is `float64`.
   the input multiply/add gates). Returns a dict with keys `dw1..dw6, db1..db3` —
   one gradient per parameter.
 
-Then grade it: the site's Run Grader button or `grade backprop-paper`.
+Then grade it: the site's Run Grader button or `uv run grade L08-backprop-paper`.
 
 ## How the grader checks you
 
@@ -264,7 +264,7 @@ reference.
 
 ## Done when
 
-`grade backprop-paper` shows all-green: the warm-up `numerical_gradient` recovers
+`uv run grade L08-backprop-paper` shows all-green: the warm-up `numerical_gradient` recovers
 `2x` to about `1e-6` with the right shape; `forward_pass` matches every reference
 node to `1e-7`; and `backward_pass` matches every reference gradient to `1e-7`,
 including the two that are *exactly* zero (`dw1, dw3` at `x1 = 0`) and the `tanh`

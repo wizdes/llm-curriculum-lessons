@@ -253,7 +253,7 @@ feature-maps` to get the scaffold):
   $\phi(X)$ as `X` and it returns the fitted weight vector `W`, shape `(d,)`. The
   only new code you write is the lift; the SVM is the engine you already built.
 
-Then grade it: the site's Run Grader button or `grade feature-maps`.
+Then grade it: the site's Run Grader button or `uv run grade L06-feature-maps`.
 
 ## How the grader checks you
 
@@ -296,7 +296,7 @@ of the columns is the thing most worth getting right by reasoning, not by peekin
 
 ## Done when
 
-`grade feature-maps` shows all-green: the warm-up `hinge_loss` returns near $1.0$
+`uv run grade L06-feature-maps` shows all-green: the warm-up `hinge_loss` returns near $1.0$
 at a near-zero weight vector; `poly_features` returns the right shape and the
 exact hand-checked row, with degree 1 reproducing the raw-plus-bias identity lift;
 the degree-2 lift separates the circles above $0.90$ held-out accuracy; and the

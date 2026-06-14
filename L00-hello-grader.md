@@ -12,11 +12,11 @@ this same loop with bigger ideas inside it.
 2. **Study the worked example** at `lessons/L00-hello-grader/worked/hello_grader.py`.
    It is annotated line-by-line with shape comments. Read it until it's obvious.
 3. **Rebuild it blind** in `my_work/hello-grader/hello_grader.py`. Running
-   `grade start hello-grader` copies a starter file there with signatures,
+   `uv run grade start L00-hello-grader` copies a starter file there with signatures,
    docstrings, and TODOs — you fill in the bodies *without* looking back at the
    worked example. The blind rebuild is the whole point: the worked example
    teaches, the rebuild proves.
-4. **Grade it** — from the site's "Run Grader" button, or `grade hello-grader`
+4. **Grade it** — from the site's "Run Grader" button, or `uv run grade L00-hello-grader`
    in the terminal. Both surfaces run the same grader.
 5. **Stuck?** Use the hint ladder (below). Never paste a solution in; the hints
    escalate from nudge → formula → pseudocode, and you choose how far to climb.
@@ -30,7 +30,7 @@ Every lesson directory looks like this one:
 
 - `lesson.md` — the concept, intuition-first.
 - `worked/` — the annotated reference implementation. Read-only territory.
-- `starter/` — the scaffold that `grade start` copies into `my_work/<slug>/`.
+- `starter/` — the scaffold that `uv run grade start` copies into `my_work/<slug>/`.
 - `grader/` — the tests that grade your `my_work/` copy. They grade mechanics
   (shapes, values, finiteness), run in seconds, and are deterministic.
 - `hints.yaml` — the hint ladder, three levels per function.
@@ -106,7 +106,7 @@ hello-grader` to copy the scaffold there):
   contract; only the per-sample punishment differs (absolute value, not square).
 
 Then grade it from both surfaces: the site's Run Grader button and
-`grade hello-grader` in the terminal. Both run the same grader.
+`uv run grade L00-hello-grader` in the terminal. Both run the same grader.
 
 ## How the grader checks you
 

@@ -267,7 +267,7 @@ develops it.
 
 ## Exercise
 
-Implement in `my_work/svm-gd/svm_gd.py` (run `grade start svm-gd` to get the
+Implement in `my_work/svm-gd/svm_gd.py` (run `uv run grade start L05-svm-gd` to get the
 scaffold). This is a blind rebuild: you write each function from scratch, then the
 grader checks it. The shape convention, curriculum-wide: $n$ rows (examples) and
 $d$ features, so $\mathbf{X}$ is $(n, d)$, the labels $y$ are length $n$ in the
@@ -303,7 +303,7 @@ $d$. Keep every array in `float64` (64-bit floating point) for precision.
   at zero and run the numbered update loop above. Returns the fitted weight vector,
   shape `(d,)`.
 
-Then grade it: the site's Run Grader button or `grade svm-gd`.
+Then grade it: the site's Run Grader button or `uv run grade L05-svm-gd`.
 
 ## How the grader checks you
 
@@ -375,7 +375,7 @@ factor, a missing strict `> 0`, or the lost $2\lambda\mathbf{W}$ term.
 
 ## Done when
 
-`grade svm-gd` shows all-green: the warm-up `mse_grad` matches in shape and value,
+`uv run grade L05-svm-gd` shows all-green: the warm-up `mse_grad` matches in shape and value,
 `hinge_loss` returns $\approx 1.0$ at a near-zero $\mathbf{W}$ (no $\Delta = 1$
 floor), `hinge_grad` is shape `(d,)` and matches the central finite-difference
 gradient to $10^{-4}$ without tripping the kink guard, and `fit` agrees with

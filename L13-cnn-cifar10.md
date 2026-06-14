@@ -243,7 +243,7 @@ every position of the image.
 
 ## Exercise
 
-Fill in `my_work/cnn-cifar10/cnn_cifar10.py` (run `grade start cnn-cifar10` to
+Fill in `my_work/cnn-cifar10/cnn_cifar10.py` (run `uv run grade start L13-cnn-cifar10` to
 get the scaffold). This module is fully self-contained: inline your own
 primitives, with no cross-lesson imports — `numpy` only.
 
@@ -300,7 +300,7 @@ size on one axis is `H_out = (H + 2*padding - kH) // stride + 1`.
   - `param_count()` — return the total scalar count (must match
     `cnn_param_count`).
 
-Then grade it: the site's Run Grader button or `grade cnn-cifar10`.
+Then grade it: the site's Run Grader button or `uv run grade L13-cnn-cifar10`.
 
 ## How the grader checks you
 
@@ -356,7 +356,7 @@ means the Linear step.
 
 ## Done when
 
-`grade cnn-cifar10` shows all-green: the `im2col` warm-up passes on its own,
+`uv run grade L13-cnn-cifar10` shows all-green: the `im2col` warm-up passes on its own,
 `forward` returns the right logits shape, your `backward` matches the
 finite-difference gradient to `1e-4` on every parameter tensor, two Adam steps
 decrease the loss, `param_count()` returns `165` for the tiny config, and the

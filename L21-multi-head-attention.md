@@ -214,7 +214,7 @@ it is detached, and that leaving the flag off leaves `last_attn_weights` as `Non
 ## Exercise
 
 Implement in `my_work/multi-head-attention/multi_head_attention.py` (run
-`grade start multi-head-attention` to get the scaffold). The single head is
+`uv run grade start L21-multi-head-attention` to get the scaffold). The single head is
 re-implemented in this file — do **not** import it from L18.
 
 - The **warm-up** — `train_bpe`, `encode`, `decode`, the L15 byte-level BPE. These
@@ -251,7 +251,7 @@ re-implemented in this file — do **not** import it from L18.
   `True`, every `forward` also sets `self.last_attn_weights` to the detached
   post-softmax weights, shape `[B, n_heads, T, T]`; when `False`, it stays `None`.
 
-Then grade it: the site's Run Grader button or `grade multi-head-attention`.
+Then grade it: the site's Run Grader button or `uv run grade L21-multi-head-attention`.
 
 ## How the grader checks you
 
@@ -292,7 +292,7 @@ before climbing.
 
 ## Done when
 
-`grade multi-head-attention` shows all-green: the BPE warm-up round-trips, the
+`uv run grade L21-multi-head-attention` shows all-green: the BPE warm-up round-trips, the
 naive wrapper and the fused `MultiHeadAttention` compute the identical function to
 `1e-5`, the shape contract holds (`(2, 6, 16)` in → `(2, 6, 16)` out), the
 retrievability contract holds (shape `[B, n_heads, T, T]`, rows sum to 1, causal

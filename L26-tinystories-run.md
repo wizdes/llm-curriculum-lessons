@@ -220,7 +220,7 @@ experiments make you predict the numbers before you measure them.
 ## Exercise
 
 Implement in `my_work/tinystories-run/tinystories_run.py` (run
-`grade start tinystories-run` to get the scaffold). The module has two halves: the
+`uv run grade start L26-tinystories-run` to get the scaffold). The module has two halves: the
 BPE warm-up (stdlib only, no torch) and the `DataLoader` (uses torch).
 
 - `train_bpe(text, vocab_size)` — learn the merge rules. Parameters: `text` is the
@@ -255,7 +255,7 @@ BPE warm-up (stdlib only, no torch) and the `DataLoader` (uses torch).
   `LongTensor`s, where `y` is `x` shifted one position forward (the next-token
   targets).
 
-Then grade it: the site's Run Grader button or `grade tinystories-run`.
+Then grade it: the site's Run Grader button or `uv run grade L26-tinystories-run`.
 
 ## How the grader checks you
 
@@ -318,7 +318,7 @@ climbing.
 
 ## Done when
 
-`grade tinystories-run` shows all-green: the warm-up round-trips ASCII and emoji,
+`uv run grade L26-tinystories-run` shows all-green: the warm-up round-trips ASCII and emoji,
 produces the exact merge-order trace, and compresses below 0.70; and the pipeline
 suite passes — `DataLoader` yields `(batch_size, block_size)` batches with
 `y == x + 1`, clears the throughput floor, and the resume contract reproduces the

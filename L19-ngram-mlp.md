@@ -189,7 +189,7 @@ changes. Hold that thought.
 
 ## Exercise
 
-Implement, in `my_work/ngram-mlp/ngram_mlp.py` (run `grade start ngram-mlp` to
+Implement, in `my_work/ngram-mlp/ngram_mlp.py` (run `uv run grade start L19-ngram-mlp` to
 get the scaffold):
 
 - `hinge_loss(scores, y, margin=1.0)` — the L5 multiclass hinge warm-up, numpy
@@ -221,7 +221,7 @@ get the scaffold):
   lr=1.0, seed=0)` — train an `NGramLM` via the canonical `train_loop` (one fixed
   full-stream batch per step) and return `(model, loss_history)`.
 
-Then grade it: the site's Run Grader button or `grade ngram-mlp`.
+Then grade it: the site's Run Grader button or `uv run grade L19-ngram-mlp`.
 
 ## How the grader checks you
 
@@ -270,7 +270,7 @@ exclusion, the weight-tying trap, and the concatenate-the-context shape walk.
 
 ## Done when
 
-`grade ngram-mlp` shows all-green: the L5 hinge warm-up matches (true-class term
+`uv run grade L19-ngram-mlp` shows all-green: the L5 hinge warm-up matches (true-class term
 excluded), one backward step leaves unused embedding rows at exactly zero
 gradient (the weight-tying trap), the trained trigram NLL beats the bigram
 counting floor by at least `0.05`, `forward` maps `(B, k)` to `(B, vocab_size)`

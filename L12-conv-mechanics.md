@@ -316,7 +316,7 @@ exercise.
 ## Exercise
 
 Implement the six functions in `my_work/conv-mechanics/conv_mechanics.py` (run
-`grade start conv-mechanics` to get the scaffold). NumPy only — no other
+`uv run grade start L12-conv-mechanics` to get the scaffold). NumPy only — no other
 libraries. Throughout, `X` is the input batch `(N, C_in, H, W)`, `W` is the
 filters `(C_out, C_in, kH, kW)`, `b` is the bias `(C_out,)`, `stride` and
 `padding` are non-negative integers, and `dout` is the upstream gradient.
@@ -352,7 +352,7 @@ filters `(C_out, C_in, kH, kW)`, `b` is the bias `(C_out,)`, `stride` and
   `(N, C, H, W)` with the upstream gradient placed only at each window's argmax
   cell and zeros everywhere else.
 
-Then grade it: the site's Run Grader button or `grade conv-mechanics`.
+Then grade it: the site's Run Grader button or `uv run grade L12-conv-mechanics`.
 
 ## How the grader checks you
 
@@ -399,7 +399,7 @@ maxpool argmax routing.
 
 ## Done when
 
-`grade conv-mechanics` shows all-green: the warm-up passes; `conv2d_forward` has
+`uv run grade L12-conv-mechanics` shows all-green: the warm-up passes; `conv2d_forward` has
 the right shape and `conv2d_forward_im2col` matches it numerically at padding 0
 and 1; `dX`, `dW`, and `db` all match the finite-difference gradients (with `dW`
 4-D, not 5-D); every `(stride, padding)` shape contract holds; and

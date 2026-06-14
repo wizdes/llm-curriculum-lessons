@@ -253,7 +253,7 @@ nucleus trimming off the nonsense tail.
 
 ## Exercise
 
-Implement in `my_work/sampling/sampling.py` (run `grade start sampling` to get the
+Implement in `my_work/sampling/sampling.py` (run `uv run grade start L24-sampling` to get the
 scaffold). The only import you need is the canonical model,
 `from references.gpt import GPT, GPTConfig`.
 
@@ -295,7 +295,7 @@ softmax + multinomial — exactly as listed above. Wrap the function in
 `@torch.no_grad()`: generation does no training, so there is no need to track
 gradients.
 
-Then grade it: the site's Run Grader button or `grade sampling`.
+Then grade it: the site's Run Grader button or `uv run grade L24-sampling`.
 
 ## How the grader checks you
 
@@ -347,7 +347,7 @@ before climbing.
 
 ## Done when
 
-`grade sampling` shows all-green: the bigram warm-up returns a valid `(1, 11)`
+`uv run grade L24-sampling` shows all-green: the bigram warm-up returns a valid `(1, 11)`
 sequence; `temperature=0.5` yields lower token entropy than `temperature=1.5`;
 `top_k=3` confines every sampled first token to the top-3 logits; the `top_p=0.9`
 nucleus carries at least 0.9 of the mass and confines the draws; `temperature=0`

@@ -309,7 +309,7 @@ is why it is this lesson's named trap.
 ## Exercise
 
 Fill in `my_work/numpy-pytorch-bridge/numpy_pytorch_bridge.py`. Run
-`grade start numpy-pytorch-bridge` to get the scaffold. The module is fully
+`uv run grade start L14-numpy-pytorch-bridge` to get the scaffold. The module is fully
 self-contained: you inline your own small NumPy CNN *and* the matching torch
 `nn.Module` — no cross-lesson imports, just `numpy` and `torch`.
 
@@ -348,7 +348,7 @@ You will implement six pieces:
   returns `(dX, dW, db)` — the gradients with respect to the input, the filters,
   and the bias.
 
-Then grade it: the site's Run Grader button or `grade numpy-pytorch-bridge`.
+Then grade it: the site's Run Grader button or `uv run grade L14-numpy-pytorch-bridge`.
 
 ## How the grader checks you
 
@@ -401,7 +401,7 @@ to jog the idea, not hand you the answer.
 
 ## Done when
 
-`grade numpy-pytorch-bridge` shows all-green: the `conv2d_backward` warm-up
+`uv run grade L14-numpy-pytorch-bridge` shows all-green: the `conv2d_backward` warm-up
 matches its finite-difference check, `TorchCNN.forward` returns shape `(8, 4)`,
 `compare_grads` reports every one of the six parameters under `1e-4` (you will see
 errors around `1e-13`), and `torch_train_step` keeps the per-step gradient norm

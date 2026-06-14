@@ -315,7 +315,7 @@ Numbered, the procedure inside the loop is:
 ## Exercise
 
 Fill in `my_work/pytorch-idioms/pytorch_idioms.py`. Run
-`grade start pytorch-idioms` to get the scaffold. The module is fully
+`uv run grade start L16-pytorch-idioms` to get the scaffold. The module is fully
 self-contained — `torch`, `numpy`, `random`, `json`, `time` only, no cross-lesson
 or `my_work` imports — because the lesson is about *writing* these idioms, not
 importing them.
@@ -368,7 +368,7 @@ You will implement five pieces:
   `get_batch` → `zero_grad` → forward → cross-entropy loss → `backward` → `step`,
   then appends `loss.item()` (a float — **never** the Tensor) to `loss_history`.
 
-Then grade it: the site's Run Grader button or `grade pytorch-idioms`.
+Then grade it: the site's Run Grader button or `uv run grade L16-pytorch-idioms`.
 
 ## How the grader checks you
 
@@ -432,7 +432,7 @@ goal is for the hint to jog the idea, not hand you the answer.
 
 ## Done when
 
-`grade pytorch-idioms` shows all-green: the `gradient_descent` warm-up matches the
+`uv run grade L16-pytorch-idioms` shows all-green: the `gradient_descent` warm-up matches the
 independent recurrence on $x^2 + 100y^2$, `train_loop` reports `steps_run=50` with
 50 finite, decreasing losses, two same-seed runs are *exactly* equal, a resumed
 run matches an uninterrupted one to float32 (model, optimizer, and — for the

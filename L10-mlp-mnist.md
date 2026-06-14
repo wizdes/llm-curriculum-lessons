@@ -246,7 +246,7 @@ How one training epoch fits together, as numbered steps (this is `train_epoch`):
 
 ## Exercise
 
-Fill in `my_work/mlp-mnist/mlp_mnist.py` (run `grade start mlp-mnist` to get the
+Fill in `my_work/mlp-mnist/mlp_mnist.py` (run `uv run grade start L10-mlp-mnist` to get the
 scaffold). numpy only. Do the warm-up and the step-zero check first, then build
 the layers, deriving each gradient from the shapes that must come out.
 
@@ -283,7 +283,7 @@ the layers, deriving each gradient from the shapes that must come out.
   `[Linear, ReLU, ..., Linear]` ending in the logits Linear; `lr` is the learning
   rate. Run the five steps above and return the scalar mean loss.
 
-Then grade it: the site's Run Grader button or `grade mlp-mnist`.
+Then grade it: the site's Run Grader button or `uv run grade L10-mlp-mnist`.
 
 ## How the grader checks you
 
@@ -328,7 +328,7 @@ shapes, to pseudocode. Try level 1 before climbing.
 
 ## Done when
 
-`grade mlp-mnist` shows all-green: `sigmoid` matches the known values; the
+`uv run grade L10-mlp-mnist` shows all-green: `sigmoid` matches the known values; the
 headline `vectorize_xor` reproduces all nine L7 gradients to `1e-7`;
 `Linear.forward` matches `X @ W + b`; `Linear.backward`'s `dW` and `db` match the
 numerical gradient with the right shapes; `ReLU.backward` masks correctly; and
