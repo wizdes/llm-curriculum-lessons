@@ -246,7 +246,7 @@ is **multi-head attention** — the next lesson.
 
 ## Exercise
 
-Implement in `my_work/single-head-attention/single_head_attention.py` (run
+Implement in `my_work/L20-single-head-attention/single_head_attention.py` (run
 `uv run grade start L20-single-head-attention` to get the scaffold). Three pieces:
 
 - `adam_bias_correction(m, v, beta1, beta2, t)` — the **warm-up**, recalled cold

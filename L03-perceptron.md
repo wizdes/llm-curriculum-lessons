@@ -224,7 +224,7 @@ You will build both. The perceptron's failure is what makes them necessary.
 
 ## Exercise
 
-Implement in `my_work/perceptron/perceptron.py` (run `uv run grade start L03-perceptron` to
+Implement in `my_work/L03-perceptron/perceptron.py` (run `uv run grade start L03-perceptron` to
 get the scaffold):
 
 - `standardize(X)` — the **warm-up**, recalled cold from L2. Parameter: `X` is the

@@ -376,7 +376,7 @@ smoothness is a property of these toy problems, not of the world.
 
 ## Exercise
 
-Implement in `my_work/gradient-descent/gradient_descent.py` (run
+Implement in `my_work/L01-gradient-descent/gradient_descent.py` (run
 `uv run grade start L01-gradient-descent` to get the scaffold):
 
 - `mse(y, y_hat)` — the **warm-up**, recalled from L0. Parameters: `y` is the

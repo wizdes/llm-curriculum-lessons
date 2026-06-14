@@ -308,7 +308,7 @@ is why it is this lesson's named trap.
 
 ## Exercise
 
-Fill in `my_work/numpy-pytorch-bridge/numpy_pytorch_bridge.py`. Run
+Fill in `my_work/L14-numpy-pytorch-bridge/numpy_pytorch_bridge.py`. Run
 `uv run grade start L14-numpy-pytorch-bridge` to get the scaffold. The module is fully
 self-contained: you inline your own small NumPy CNN *and* the matching torch
 `nn.Module` — no cross-lesson imports, just `numpy` and `torch`.

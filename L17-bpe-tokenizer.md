@@ -262,7 +262,7 @@ can iterate fast.
 ## Exercise
 
 Implement the warm-up and the three BPE functions in
-`my_work/bpe-tokenizer/bpe_tokenizer.py` (run `uv run grade start L17-bpe-tokenizer` to
+`my_work/L17-bpe-tokenizer/bpe_tokenizer.py` (run `uv run grade start L17-bpe-tokenizer` to
 create that file from the starter). Self-contained: numpy only — no torch, no
 cross-lesson imports, no dataset reads.
 

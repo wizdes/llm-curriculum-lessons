@@ -289,7 +289,7 @@ answer key.
 
 ## Exercise
 
-Implement in `my_work/logistic-regression/logistic_regression.py` (run
+Implement in `my_work/L04-logistic-regression/logistic_regression.py` (run
 `uv run grade start L04-logistic-regression` to get the scaffold). This is a blind rebuild:
 you write each function from scratch, then the grader checks it. The shape
 convention, curriculum-wide: $n$ rows (examples) and $d$ features, so $X$ is

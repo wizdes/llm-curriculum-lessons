@@ -243,7 +243,7 @@ every position of the image.
 
 ## Exercise
 
-Fill in `my_work/cnn-cifar10/cnn_cifar10.py` (run `uv run grade start L13-cnn-cifar10` to
+Fill in `my_work/L13-cnn-cifar10/cnn_cifar10.py` (run `uv run grade start L13-cnn-cifar10` to
 get the scaffold). This module is fully self-contained: inline your own
 primitives, with no cross-lesson imports — `numpy` only.
 

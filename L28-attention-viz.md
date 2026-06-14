@@ -221,7 +221,7 @@ that points at the fix.
 
 ## Exercise
 
-Implement in `my_work/attention-viz/attention_viz.py` (run
+Implement in `my_work/L28-attention-viz/attention_viz.py` (run
 `uv run grade start L28-attention-viz` to get the scaffold). You write two functions and may
 import only `references.*` plus numpy/torch — no cross-lesson imports.
 

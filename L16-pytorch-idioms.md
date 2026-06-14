@@ -314,7 +314,7 @@ Numbered, the procedure inside the loop is:
 
 ## Exercise
 
-Fill in `my_work/pytorch-idioms/pytorch_idioms.py`. Run
+Fill in `my_work/L16-pytorch-idioms/pytorch_idioms.py`. Run
 `uv run grade start L16-pytorch-idioms` to get the scaffold. The module is fully
 self-contained — `torch`, `numpy`, `random`, `json`, `time` only, no cross-lesson
 or `my_work` imports — because the lesson is about *writing* these idioms, not

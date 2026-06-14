@@ -196,7 +196,7 @@ as a warm-up below.
 
 ## Exercise
 
-Implement in `my_work/backprop-paper/backprop_paper.py` (run
+Implement in `my_work/L08-backprop-paper/backprop_paper.py` (run
 `uv run grade start L08-backprop-paper` to get the scaffold). All values are scalars and all
 arithmetic is `float64`.
 

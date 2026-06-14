@@ -189,7 +189,7 @@ changes. Hold that thought.
 
 ## Exercise
 
-Implement, in `my_work/ngram-mlp/ngram_mlp.py` (run `uv run grade start L19-ngram-mlp` to
+Implement, in `my_work/L19-ngram-mlp/ngram_mlp.py` (run `uv run grade start L19-ngram-mlp` to
 get the scaffold):
 
 - `hinge_loss(scores, y, margin=1.0)` — the L5 multiclass hinge warm-up, numpy

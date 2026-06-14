@@ -315,7 +315,7 @@ exercise.
 
 ## Exercise
 
-Implement the six functions in `my_work/conv-mechanics/conv_mechanics.py` (run
+Implement the six functions in `my_work/L12-conv-mechanics/conv_mechanics.py` (run
 `uv run grade start L12-conv-mechanics` to get the scaffold). NumPy only — no other
 libraries. Throughout, `X` is the input batch `(N, C_in, H, W)`, `W` is the
 filters `(C_out, C_in, kH, kW)`, `b` is the bias `(C_out,)`, `stride` and

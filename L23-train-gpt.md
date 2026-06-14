@@ -340,7 +340,7 @@ if it spikes, that is where warmup and gradient clipping earn their keep.
 
 ## Exercise
 
-Implement in `my_work/train-gpt/train_gpt.py` (run `uv run grade start L23-train-gpt` to get
+Implement in `my_work/L23-train-gpt/train_gpt.py` (run `uv run grade start L23-train-gpt` to get
 the scaffold). Two frozen canonicals are imported for you —
 `from references.gpt import GPT, GPTConfig` and the frozen `train_loop` — and the
 `SMOKE` / `BABY_GPT` configs are given. You write:

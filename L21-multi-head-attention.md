@@ -213,7 +213,7 @@ it is detached, and that leaving the flag off leaves `last_attn_weights` as `Non
 
 ## Exercise
 
-Implement in `my_work/multi-head-attention/multi_head_attention.py` (run
+Implement in `my_work/L21-multi-head-attention/multi_head_attention.py` (run
 `uv run grade start L21-multi-head-attention` to get the scaffold). The single head is
 re-implemented in this file — do **not** import it from L18.
 

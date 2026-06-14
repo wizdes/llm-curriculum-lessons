@@ -306,7 +306,7 @@ causal-mask thought experiment — predict first, then check.
 
 ## Exercise
 
-Implement in `my_work/ablation-harness/ablation_harness.py` (run
+Implement in `my_work/L27-ablation-harness/ablation_harness.py` (run
 `uv run grade start L27-ablation-harness` to get the scaffold). For imports, lean on
 `references.*` (plus numpy/torch and ordinary stdlib like `json`, `time`,
 `dataclasses`, `pathlib`, and `yaml` for the YAML parse) — the one hard rule is

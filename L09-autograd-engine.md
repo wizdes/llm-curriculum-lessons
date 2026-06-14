@@ -201,7 +201,7 @@ the graph*, not about two big phases of code you write by hand.
 
 ## Exercise
 
-Implement your engine in `my_work/autograd-engine/autograd_engine.py`. Run
+Implement your engine in `my_work/L09-autograd-engine/autograd_engine.py`. Run
 `uv run grade start L09-autograd-engine` to drop the starter scaffold into place. Do the
 spaced-retrieval warm-up first, then build `Value` one operation at a time,
 deriving each gate's local derivative *before* you transcribe it. Keep the engine

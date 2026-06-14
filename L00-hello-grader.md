@@ -11,7 +11,7 @@ this same loop with bigger ideas inside it.
 1. **Read** this page. The concept section below explains `mse` and `mae`.
 2. **Study the worked example** at `lessons/L00-hello-grader/worked/hello_grader.py`.
    It is annotated line-by-line with shape comments. Read it until it's obvious.
-3. **Rebuild it blind** in `my_work/hello-grader/hello_grader.py`. Running
+3. **Rebuild it blind** in `my_work/L00-hello-grader/hello_grader.py`. Running
    `uv run grade start L00-hello-grader` copies a starter file there with signatures,
    docstrings, and TODOs — you fill in the bodies *without* looking back at the
    worked example. The blind rebuild is the whole point: the worked example
@@ -95,8 +95,7 @@ become easy to see.
 
 ## Exercise
 
-Implement in `my_work/hello-grader/hello_grader.py` (run `grade start
-hello-grader` to copy the scaffold there):
+Implement in `my_work/L00-hello-grader/hello_grader.py` (run `uv run grade start L00-hello-grader` to copy the scaffold there):
 
 - `mse(y, y_hat)` — mean squared error. Parameters: `y` is the array of true
   answers and `y_hat` the array of model predictions, both 1-D arrays (or

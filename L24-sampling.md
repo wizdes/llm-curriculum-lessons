@@ -253,7 +253,7 @@ nucleus trimming off the nonsense tail.
 
 ## Exercise
 
-Implement in `my_work/sampling/sampling.py` (run `uv run grade start L24-sampling` to get the
+Implement in `my_work/L24-sampling/sampling.py` (run `uv run grade start L24-sampling` to get the
 scaffold). The only import you need is the canonical model,
 `from references.gpt import GPT, GPTConfig`.
 

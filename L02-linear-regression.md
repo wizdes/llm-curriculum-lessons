@@ -334,7 +334,7 @@ scales — which is exactly why standardization earns its keep.
 
 ## Exercise
 
-Implement six functions in `my_work/linear-regression/linear_regression.py`. Run
+Implement six functions in `my_work/L02-linear-regression/linear_regression.py`. Run
 `uv run grade start L02-linear-regression` to get the scaffold, then fill in each function
 (do not peek at the worked solution while you do). Keep every array **float64** —
 the gradient check fails on float32 rounding noise. Do not import sklearn; it

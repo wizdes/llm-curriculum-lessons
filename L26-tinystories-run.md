@@ -219,7 +219,7 @@ experiments make you predict the numbers before you measure them.
 
 ## Exercise
 
-Implement in `my_work/tinystories-run/tinystories_run.py` (run
+Implement in `my_work/L26-tinystories-run/tinystories_run.py` (run
 `uv run grade start L26-tinystories-run` to get the scaffold). The module has two halves: the
 BPE warm-up (stdlib only, no torch) and the `DataLoader` (uses torch).
 

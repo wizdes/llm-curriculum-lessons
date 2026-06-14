@@ -228,8 +228,7 @@ building:
 
 ## Exercise
 
-Implement in `my_work/feature-maps/feature_maps.py` (run `grade start
-feature-maps` to get the scaffold):
+Implement in `my_work/L06-feature-maps/feature_maps.py` (run `uv run grade start L06-feature-maps` to get the scaffold):
 
 - `hinge_loss(W, X, y, lam)` — the **warm-up**, the L5 hinge-plus-L2 loss recalled
   cold. Parameters: `W` is the weight vector, shape `(d,)` (one weight per feature

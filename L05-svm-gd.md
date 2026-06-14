@@ -267,7 +267,7 @@ develops it.
 
 ## Exercise
 
-Implement in `my_work/svm-gd/svm_gd.py` (run `uv run grade start L05-svm-gd` to get the
+Implement in `my_work/L05-svm-gd/svm_gd.py` (run `uv run grade start L05-svm-gd` to get the
 scaffold). This is a blind rebuild: you write each function from scratch, then the
 grader checks it. The shape convention, curriculum-wide: $n$ rows (examples) and
 $d$ features, so $\mathbf{X}$ is $(n, d)$, the labels $y$ are length $n$ in the

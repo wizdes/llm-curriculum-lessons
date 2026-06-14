@@ -246,7 +246,7 @@ How one training epoch fits together, as numbered steps (this is `train_epoch`):
 
 ## Exercise
 
-Fill in `my_work/mlp-mnist/mlp_mnist.py` (run `uv run grade start L10-mlp-mnist` to get the
+Fill in `my_work/L10-mlp-mnist/mlp_mnist.py` (run `uv run grade start L10-mlp-mnist` to get the
 scaffold). numpy only. Do the warm-up and the step-zero check first, then build
 the layers, deriving each gradient from the shapes that must come out.
 

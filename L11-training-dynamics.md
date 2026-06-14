@@ -250,7 +250,7 @@ prints the loss falling — fully self-contained numpy, no dataset.
 
 ## Exercise
 
-Implement in `my_work/training-dynamics/training_dynamics.py` (run
+Implement in `my_work/L11-training-dynamics/training_dynamics.py` (run
 `uv run grade start L11-training-dynamics` to get the scaffold). Do the warm-up
 `numerical_gradient` first — every gradient check below leans on it. All five
 functions are plain numpy; no dataset, no imports beyond numpy.

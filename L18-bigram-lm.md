@@ -244,7 +244,7 @@ the next lessons add context.
 
 ## Exercise
 
-Implement in `my_work/bigram-lm/bigram_lm.py` (run `uv run grade start L18-bigram-lm` to get
+Implement in `my_work/L18-bigram-lm/bigram_lm.py` (run `uv run grade start L18-bigram-lm` to get
 the scaffold). Each function below lists its signature, every parameter, and what
 it returns.
 

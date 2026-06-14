@@ -308,7 +308,7 @@ the grader uses: `GPTConfig(n_layer=2, n_head=2, n_embd=16, block_size=32, vocab
 
 ## Exercise
 
-Implement the GPT in `my_work/gpt-assembly/gpt_assembly.py` (run
+Implement the GPT in `my_work/L22-gpt-assembly/gpt_assembly.py` (run
 `uv run grade start L22-gpt-assembly` to get the scaffold). You will build the warm-up bigram
 model, the config, and the four GPT pieces. Several pieces — `GPTConfig`,
 `MultiHeadAttention`, `FeedForward` — are scaffolded for you; the lines that matter are
