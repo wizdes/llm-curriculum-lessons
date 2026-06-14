@@ -40,6 +40,7 @@
       }
       .content {
         left: 240px;
+        padding-top: 0; /* drop pure.css's 60px; markdown's 24px is enough */
       }
       .sidebar > h1 {
         display: none; /* hide the app title so the list starts at M1 */
@@ -50,7 +51,9 @@
         line-height: normal;
         padding-bottom: 16px;
       }
-      .sidebar-nav ul {
+      /* `.sidebar ` prefix raises specificity to beat pure.css's
+         `.sidebar ul li ul{padding-left:20px}` nested-list indent. */
+      .sidebar .sidebar-nav ul {
         margin: 0;
         padding: 0;
       }
