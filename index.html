@@ -36,6 +36,7 @@
         width: 240px;
         padding: 16px;
         border-right: 1px solid var(--border);
+        font-size: 16px; /* pure.css defaults to 15px */
       }
       .content {
         left: 240px;
@@ -43,15 +44,31 @@
       .sidebar > h1 {
         display: none; /* hide the app title so the list starts at M1 */
       }
+      /* Tighten the list: pure.css uses line-height:2em (huge lesson gaps)
+         and a 15px left indent. Match the original's tight, flush list. */
+      .sidebar .sidebar-nav {
+        line-height: normal;
+        padding-bottom: 16px;
+      }
+      .sidebar-nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      .sidebar-nav > ul > li {
+        margin: 0 0 12px; /* gap between milestone groups */
+      }
+      .sidebar-nav > ul > li:last-child {
+        margin-bottom: 0;
+      }
       .sidebar-nav strong {
+        display: block; /* milestone header on its own line, small gap below */
+        margin: 0 0 2px;
+        padding: 0;
         color: #57606a;
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.02em;
-      }
-      .sidebar-nav ul li ul {
-        padding-left: 0; /* no extra indent for lessons under a milestone */
       }
       .sidebar-nav a {
         display: block;
@@ -75,7 +92,7 @@
         margin: 0;
         padding: 24px 32px;
         font-size: 16px;
-        line-height: 1.6;
+        /* no line-height: inherit `normal`, matching the original */
       }
       .markdown-section h1 {
         font-size: 2em;
